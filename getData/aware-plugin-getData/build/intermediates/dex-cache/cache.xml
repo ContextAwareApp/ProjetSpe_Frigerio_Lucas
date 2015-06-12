@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/yuyu/Projet_spe/AndroidStudioProjects/getData/aware-plugin-getData/libs/commons-math3-3.5.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="13af68e9a11576953f5c4b09436f8207be9d3a27">
+        <dex dex="/home/yuyu/Projet_spe/AndroidStudioProjects/getData/aware-plugin-getData/app/build/intermediates/pre-dexed/debug/commons-math3-3.5-6e5d8b5061dbc575844cfe4be6a14853ea2927d1.jar" />
+    </item>
+
+</items>

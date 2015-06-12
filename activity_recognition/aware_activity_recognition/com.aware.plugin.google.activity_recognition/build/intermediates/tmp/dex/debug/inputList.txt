@@ -1,0 +1,11 @@
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/classes/debug
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-261a4164b84d2dbe19d6b4dc34f0893e1b003579.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/zbar-8e79f11e63ee88ea59fbcc490130ce0ecad5703a.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/classes-2f6f75a5151f5cdb6f5c218eb67bf203b899d034.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/classes-23baba6304ca9c853126fb10176f7bef44d4ce1a.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-df69d856b1b948c4230a75b97893f68f830c2106.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/mqtt-client-0.4.0-f7599b18707b9e80dce6870b691e274216c4b3b5.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/classes-e85a099cabf565d329789e05570f727be7fa4f0f.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/classes-4ee63e292f8deee7d70edb0f446ee7662e3ccf43.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/classes-c537176bac1c67d132115191ecf3a707c14909e3.jar
+/home/yuyu/Projet_spe/activity_recognition/aware_activity_recognition/com.aware.plugin.google.activity_recognition/build/intermediates/pre-dexed/debug/classes-5162245b20ee7761587ee1ccb06929a284c91ec8.jar
