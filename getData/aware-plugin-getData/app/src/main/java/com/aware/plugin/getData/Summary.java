@@ -82,6 +82,7 @@ public class Summary {
         this.skewness = skew.evaluate(this.data);
         Kurtosis kurt = new Kurtosis();
         this.kurtosis = kurt.evaluate(this.data);
+        this.longeur = 6;
     }
 
     public double[] getSummary() {

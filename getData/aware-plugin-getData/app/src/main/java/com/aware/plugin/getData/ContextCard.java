@@ -40,10 +40,21 @@ public class ContextCard implements IContextCard {
 
     //Declare here all the UI elements you'll be accessing
     private View card;
+
     private TextView text;
+    private TextView textPredict;
+
     private Button bStart;
     private Button bEnd;
     private Button bWrite;
+    private Button bPredict;
+    private Button bYes;
+    private Button bNo;
+    private Button bStill;
+    private Button bWalking;
+    private Button bRunning;
+
+
     private Chronometer chrono;
 
     /* A commenter pour enlever graphiques */
@@ -62,9 +73,18 @@ public class ContextCard implements IContextCard {
 
         //Initialize UI elements from the card
         text = (TextView) card.findViewById(R.id.text);
+        textPredict = (TextView) card.findViewById(R.id.prediction);
+
         bStart = (Button) card.findViewById(R.id.start);
         bEnd = (Button) card.findViewById(R.id.end);
         bWrite = (Button) card.findViewById(R.id.write);
+        bPredict = (Button) card.findViewById(R.id.predictButton);
+        bYes = (Button) card.findViewById(R.id.yesButton);
+        bNo = (Button) card.findViewById(R.id.noButton);
+        bStill = (Button) card.findViewById(R.id.stillButton);
+        bWalking = (Button) card.findViewById(R.id.walkingButton);
+        bRunning = (Button) card.findViewById(R.id.runningButton);
+
         chrono = (Chronometer) card.findViewById(R.id.chrono);
 
         // Load saved boolean
@@ -128,6 +148,70 @@ public class ContextCard implements IContextCard {
                 } else {
                     text.setText("ALREADY SAVED" + "/" + " Start : " + start + " End : " + end);
                 }
+            }
+        });
+
+        bPredict.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                long end = System.currentTimeMillis();
+                long start = end - 30000;
+                long middle = (end + start) / 2;
+                start = middle - 5000;
+                end = middle + 5000;
+                String s = DataHandler.getProcessedDataAndPredict(sContext.getContentResolver(), start, end);
+                textPredict.setText(s);
+                bYes.setVisibility(View.VISIBLE);
+                bNo.setVisibility(View.VISIBLE);
+            }
+        });
+
+        bYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bYes.setVisibility(View.INVISIBLE);
+                bNo.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        bNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bStill.setVisibility(View.VISIBLE);
+                bWalking.setVisibility(View.VISIBLE);
+                bRunning.setVisibility(View.VISIBLE);
+                bYes.setVisibility(View.INVISIBLE);
+                bNo.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        bStill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DataHandler.PREDICTED_CLASS = 2;
+                bStill.setVisibility(View.INVISIBLE);
+                bWalking.setVisibility(View.INVISIBLE);
+                bRunning.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        bWalking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DataHandler.PREDICTED_CLASS = 1;
+                bStill.setVisibility(View.INVISIBLE);
+                bWalking.setVisibility(View.INVISIBLE);
+                bRunning.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        bRunning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DataHandler.PREDICTED_CLASS = 3;
+                bStill.setVisibility(View.INVISIBLE);
+                bWalking.setVisibility(View.INVISIBLE);
+                bRunning.setVisibility(View.INVISIBLE);
             }
         });
 
