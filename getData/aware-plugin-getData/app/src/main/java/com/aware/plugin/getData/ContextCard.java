@@ -159,7 +159,7 @@ public class ContextCard implements IContextCard {
                 long middle = (end + start) / 2;
                 start = middle - 5000;
                 end = middle + 5000;
-                String s = DataHandler.getProcessedDataAndPredict(sContext.getContentResolver(), start, end);
+                String s = DataHandler.getProcessedDataAndPredictRaw(sContext.getContentResolver(), start, end);
                 textPredict.setText(s);
                 bYes.setVisibility(View.VISIBLE);
                 bNo.setVisibility(View.VISIBLE);
